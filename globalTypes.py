@@ -1,0 +1,45 @@
+from enum import Enum
+
+class TokenType(Enum):
+    ID = 101
+    NUM = 111
+    ELSE = 'else'
+    IF = 'if'
+    INT = 'integer'
+    FOR = 'for'
+    WHILE = 'while'
+    RETURN = 'return'
+    VOID = 'void'
+    PLUS = '+'
+    MINUS = '-'
+    TIMES = '*'
+    OVER = '/'
+    LT = '<'
+    LTE = '<='
+    GT = '>'
+    GTE = '>='
+    EQUALS = '=='
+    DIFFERENT = '!='
+    ASSIGN = '='
+    SEMI = ';'
+    COMMA = ','
+    LPAREN = '('
+    RPAREN = ')'
+    LSQUAREP = '['
+    RSQUAREP = ']'
+    LKPAREN = '{'
+    RKPAREN = '}'
+    OPENCOMMENT = '/*'
+    CLOSECOMMENT = '*/'
+    ENDFILE = '$'
+    COMMENT = '/* */'
+    ERROR = 245
+
+class ReservedWords(Enum):
+    ELSE = 'else'
+    IF = 'if'
+    INT = 'int'
+    FOR = 'for'
+    WHILE = 'while'
+    RETURN = 'return'
+    VOID = 'void'
