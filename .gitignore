@@ -7,3 +7,5 @@
 .idea/misc.xml
 .idea/modules.xml
 .idea/vcs.xml
+__pycache__/globalTypes.cpython-37.pyc
+__pycache__/lexer.cpython-37.pyc
