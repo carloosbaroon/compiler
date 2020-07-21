@@ -1,7 +1,7 @@
 from enum import Enum
 from globalTypes import *
 from lexer import *
-#Impresion de arbol basado en ParserTyny.py
+# Impresion de arbol basado en ParserTyny.py
 token_g = ''
 currenttoken_g = ''
 position_g = ''
@@ -37,9 +37,9 @@ def newExpNode(kind):
     if (t==None):
         print("Out of memory error at line " + lineno)
     else:
-        #for i in range(MAXCHILDREN):
+        # for i in range(MAXCHILDREN):
         #    t.child[i] = None
-        #t.sibling = None
+        # t.sibling = None
         t.nodekind = NodeKind.ExpK
         t.exp = kind
         t.lineno = lineno
@@ -183,6 +183,7 @@ def updateInitialPos(band, msg):
         iniCToken = currenttoken_g
         iniToken = token_g
         iniPos = position_g - len(token_g)
+
 def programa():
     global band
     global iniCToken
